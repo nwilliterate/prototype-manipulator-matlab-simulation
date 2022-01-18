@@ -75,6 +75,7 @@ for i=1:6
     xlabel('Time (sec)', 'FontSize', 10)
     ylabel("q_{"+i+ "}(rad)", 'FontSize', 10);
 end
+legend('cur', 'ref', 'Location', 'southeast');
 saveas(gcf,'fig\sim_pd_con_result1.png');
 
 % figure 2 : Joint Velocity
@@ -92,4 +93,5 @@ for i=1:6
     xlabel('Time (sec)', 'FontSize', 10)
     ylabel("dq_{"+i+ "}(rad)", 'FontSize', 10);
 end
+legend('cur', 'ref', 'Location', 'northeast');
 saveas(gcf,'fig\sim_pd_con_result2.png');

@@ -77,7 +77,7 @@ axis([ax.XLim(1)-r ax.XLim(2)+r ax.YLim(1)-r ax.YLim(2)+r ax.ZLim(1)-r ax.ZLim(2
 xlabel('P_x(m)','FontSize', 12);
 ylabel('P_y(m)','FontSize', 12);
 zlabel('P_z(m)','FontSize', 12);
-legend('kin.','CoM', 'Location', 'northwest');
+legend('ref.','cur', 'Location', 'northwest');
 saveas(gcf,'fig\car_pd_con_result1.png');
 
 % figure 2 : Joint Position
@@ -95,4 +95,5 @@ for i=1:6
     xlabel('Time (sec)', 'FontSize', 10)
     ylabel("q_{"+i+ "}(rad)", 'FontSize', 10);
 end
+legend('q', 'Location', 'southeast');
 saveas(gcf,'fig\car_pd_con_result2.png');

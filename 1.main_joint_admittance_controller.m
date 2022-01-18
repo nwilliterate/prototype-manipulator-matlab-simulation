@@ -85,7 +85,7 @@ xlabel('P_x(m)','FontSize', 12);
 ylabel('P_y(m)','FontSize', 12);
 zlabel('P_z(m)','FontSize', 12);
 legend('ref.','cur', 'Location', 'northwest');
-saveas(gcf,'fig\car_pd_con_result1.png');
+saveas(gcf,'fig\joint_ad_con_result1.png');
 
 % figure 2 : Joint Position
 fig = figure(2);
@@ -102,7 +102,8 @@ for i=1:6
     xlabel('Time (sec)', 'FontSize', 10)
     ylabel("q_{"+i+ "}(rad)", 'FontSize', 10);
 end
-saveas(gcf,'fig\car_pd_con_result2.png');
+legend('cur', 'ref', 'Location', 'northwest');
+saveas(gcf,'fig\joint_ad_con_result2.png');
 
 
 % figure 3 : 
@@ -120,4 +121,5 @@ for i=1:3
     xlabel('Time (sec)', 'FontSize', 10)
     ylabel("x_{"+i+ "}(rad)", 'FontSize', 10);
 end
-% saveas(gcf,'fig\car_pd_con_result2.png');
+legend('cur', 'ref', 'Location', 'southwest');
+saveas(gcf,'fig\joint_ad_con_result3.png');
