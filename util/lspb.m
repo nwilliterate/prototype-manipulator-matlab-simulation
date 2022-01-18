@@ -1,3 +1,11 @@
+% Copyright (C) 1993-2017, by Peter I. Corke
+%
+% This file is part of The Robotics Toolbox for MATLAB (RTB).
+% 
+% LSPB  Linear segment with parabolic blend
+% 
+% https://github.com/petercorke/robotics-toolbox-matlab/blob/master/lspb.m
+%
 function [s,sd,sdd] = lspb(q0, q1, t, V)
 
     t0 = t;
