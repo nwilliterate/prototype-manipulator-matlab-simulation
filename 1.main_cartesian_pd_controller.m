@@ -43,6 +43,7 @@ for i=1:sample_size
     [p, R]=get_pose(q);
     J= get_JacobianPos(q);
     
+    
     cur_p(i,:) = p;
     q_ref(i,:) = q + pinv(J)*(ref_x(i,1:3)'-p);
     
